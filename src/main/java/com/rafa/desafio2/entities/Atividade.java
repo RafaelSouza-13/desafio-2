@@ -20,7 +20,7 @@ public class Atividade {
     @ManyToMany(mappedBy = "atividades")
     private Set<Participante> participantes = new HashSet<>();
     @ManyToOne
-    @JoinColumn(name = "categoria.id")
+    @JoinColumn(name = "categoria_id")
     private Categoria categoria;
     @OneToMany(mappedBy = "atividade")
     private List<Bloco> blocos = new ArrayList<>();
